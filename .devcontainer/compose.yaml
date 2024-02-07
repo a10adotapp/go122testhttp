@@ -1,0 +1,9 @@
+services:
+  devcontainer:
+    image: go122test
+    build:
+      dockerfile: Dockerfile
+    working_dir: /go/src/go122test
+    volumes:
+      - ../:/go/src/go122test
+    command: sleep infinity
